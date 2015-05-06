@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!-- Begin Content -->
+<!-- xBegin Content -->
 <div id="content">
 	<?php query_posts('showposts=1'); $ids = array(); while ( have_posts() ) : the_post(); $ids[] = get_the_ID(); // start loop one to show just the first post ?>
     <article id="post-excerpt-<?php the_ID(); ?>" class="post-excerpt">
