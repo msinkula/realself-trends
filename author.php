@@ -21,7 +21,7 @@
     <p class="post-link"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>    
     </article>
     <?php endwhile; endif; // end the loop ?>
-    <?php /*echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="10" pause="true"]');*/ ?>
+    <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="10" offset="10" pause="true" button_label="Load More"]'); ?>
     
 </div>
 <!-- End Content -->

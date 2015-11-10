@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<!-- xBegin Content -->
+<!-- Begin Content -->
 <div id="content">
 	<?php query_posts('showposts=1'); $ids = array(); while ( have_posts() ) : the_post(); $ids[] = get_the_ID(); // start loop one to show just the first post ?>
     <article id="post-excerpt-<?php the_ID(); ?>" class="post-excerpt">
@@ -26,7 +26,7 @@
     <p class="post-link"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>    
     </article>
     <?php endwhile; wp_reset_query(); // end the loop ?>    
-    <?php /*echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="10" pause="true"]');*/ ?>
+    <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="9" offset="10" pause="true" destroy_after="3" button_label="Load More"]'); ?>
 </div>
 <!-- End Content -->
     

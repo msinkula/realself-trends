@@ -394,7 +394,7 @@ input, textarea {
 		color: #FFF;
 		font-size: 1.625em;
 		line-height: 125%;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		margin-bottom: 10px;
 		overflow: hidden;
 		font-weight: normal !important;
@@ -715,6 +715,31 @@ input, textarea {
 	div.ssba img {
 		margin-left: 10px;
 	}
+
+	/* ---- Woo Slider ---- */
+
+	div.wooslider {
+		max-width: 700px;
+		margin: 0 auto 60px auto !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	ul.slides {
+		padding: 0 !important;
+	}
+
+	div.slide-content {
+		margin: 0 !important;
+	}
+
+	/* ----- Facebook Video ----- */
+	.fb_iframe_widget {
+		display: block !important;
+		width: 100% !important;
+		height: auto !important;
+		margin-bottom: 10px !important;
+	}
 	
 	
 	/* ----- Comments Section ----- */
@@ -791,7 +816,7 @@ input, textarea {
 		/*border: 1px solid magenta;*/	
 	}
 	
-	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba {
+	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba, div.fb-video  {
 		box-sizing: border-box;
 		max-width: 700px;
 		margin-right: auto;

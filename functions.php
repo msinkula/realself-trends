@@ -31,6 +31,8 @@ add_theme_support( 'post-thumbnails' );
 // Create Custom Image Sizes
 add_image_size( 'extra-large', 1000, 0 ); // 1000 pixels wide by 0 pixels tall, soft proportional crop mode
 add_image_size( 'large-feed', 700, 400, true ); // 700 pixels wide by 400 pixels tall, hard crop mode
+add_image_size( 'image_trendsblog_d', 128, 128, true ); // 128 pixels wide by 128 pixels tall, hard crop mode
+add_image_size( 'image_trendsblog_m', 300, 300, true ); // 300 pixels wide by 300 pixels tall, hard crop mode
 
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
