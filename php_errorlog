@@ -1,7 +1,0 @@
-[21-Mar-2015 05:45:25 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[01-May-2015 15:03:17 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[12-May-2015 02:06:45 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[18-Jun-2015 09:10:12 America/Chicago] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[04-Aug-2015 00:33:56 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[13-Sep-2015 06:33:49 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
-[14-Oct-2015 06:51:12 CST6CDT] PHP Fatal error:  Call to undefined function get_header() in /home/trends70/public_html/wp-content/themes/realself-trends/index.php on line 1
