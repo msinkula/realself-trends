@@ -98,10 +98,6 @@ p a, li a {
 	color: #40A4C6;
 	}
 	
-b, strong {
-	font-family: 'OpenSansSemibold', Arial, sans-serif ;
-}
-	
 input, textarea {
 	box-sizing: border-box;
 	width: 100%;
@@ -116,8 +112,9 @@ input, textarea {
 }
 
 img, embed, object, video, iframe {
-    max-width: 100%; 
-}
+	max-width: 100%; /* Testing Local to Remote */
+	}
+
 
 /* ----- Header ----- */
 
@@ -246,13 +243,7 @@ img, embed, object, video, iframe {
 	#content article.post-excerpt {
 		clear: both;
 		overflow: hidden;
-		margin-bottom: 6px;
-		padding-bottom: 20px;
-		border-bottom: 1px solid #ebeae7;
-	}
-
-	#content article.post-excerpt:last-child {
-		border-bottom: 1px solid #fff;
+		margin-bottom: 20px;
 	}
 		
 	#content h1 {
@@ -339,14 +330,10 @@ img, embed, object, video, iframe {
 		
 		#content p.post-tags a {
 			margin-right: 10px;
-			margin-bottom: 10px;
 			padding: 4px 8px;
 			border-radius: 2px;
 			color: #666260;
 			background-color: #ebeae7;
-			white-space: nowrap;
-			/*overflow: hidden;*/
-			display: inline-block;	
 		}
 		
 		#content p.post-tags a:before {
@@ -368,8 +355,9 @@ img, embed, object, video, iframe {
 		
 		#content p.post-link a:after, #post-navigation p.post-link a:after {
 			position: relative;
-			content: '›';
-			top: -1px;
+			content: '>';
+			/*font-size: 1.125em;*/
+			/*top: -1px;*/
 			margin-left: 4px;
 		}
 		
@@ -389,18 +377,16 @@ img, embed, object, video, iframe {
 		}
 		
 	#content blockquote {
-		font-family: 'OpenSansLight', Arial, sans-serif !important;
-		position: relative; 
+		position: relative;
 		padding: 20px;
 		padding-bottom: 40px;
 		background-color: #75c1d6;
 		color: #FFF;
 		font-size: 1.625em;
 		line-height: 125%;
-		/*text-transform: uppercase;*/
+		text-transform: uppercase;
 		margin-bottom: 10px;
 		overflow: hidden;
-		font-weight: normal !important;
 	}
 	
 		/* Tweet This Blockquote */
@@ -430,11 +416,12 @@ img, embed, object, video, iframe {
 		box-sizing: border-box;
 		max-width: 100%;
 		height: auto;
+		position: relative;
 		}
 	
 	#content img.attachment-thumbnail {
 		float: left;	
-		margin: 20px 20px 0px 0px;
+		margin: 4px 20px 20px 0;
 		}
 		
 	#content article.post-excerpt img.attachment-thumbnail {
@@ -444,7 +431,7 @@ img, embed, object, video, iframe {
 	#content article.post-excerpt img.attachment-medium {
 		display: none;
 	}
-		
+	
 	/* ----- SumoMe Image Sharer ----- */
 	
 	.sumome-image-sharer {
@@ -454,9 +441,8 @@ img, embed, object, video, iframe {
 		-o-border-radius: 0px !important;
 		border-radius: 0px !important;
 		box-shadow: 0 0 0px 0px rgba(0,0,0,0) !important;
-		 width: 160px !important; 
-			margin-left: -35px !important;
-		
+		display: block !important;
+		width: 200px !important;
 		}
 		
 		body.home div.sumome-image-sharer,
@@ -469,11 +455,11 @@ img, embed, object, video, iframe {
 		
 		.sumome-image-sharer a {
 		  border-radius: 50% !important;
-		  margin-left: 10px !important;
+		  margin-right: 10px !important;
 		}
 	
-	/* ----- Search Form & Modal Window ----- */
 	
+	/* ----- Search Form & Modal Window ----- */
 	#search-modal {
 		display: none;
 		background-color: #e4ddd7;
@@ -718,31 +704,6 @@ img, embed, object, video, iframe {
 	div.ssba img {
 		margin-left: 10px;
 	}
-
-	/* ---- Woo Slider ---- */
-
-	div.wooslider {
-		max-width: 700px;
-		margin: 0 auto 60px auto !important;
-		border: none !important;
-		box-shadow: none !important;
-	}
-
-	ul.slides {
-		padding: 0 !important;
-	}
-
-	div.slide-content {
-		margin: 0 !important;
-	}
-
-	/* ----- Facebook Video ----- */
-	.fb_iframe_widget {
-		display: block !important;
-		width: 100% !important;
-		height: auto !important;
-		margin-bottom: 10px !important;
-	}
 	
 	
 	/* ----- Comments Section ----- */
@@ -819,7 +780,7 @@ img, embed, object, video, iframe {
 		/*border: 1px solid magenta;*/	
 	}
 	
-	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba, div.fb-video  {
+	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba {
 		box-sizing: border-box;
 		max-width: 700px;
 		margin-right: auto;
