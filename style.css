@@ -115,6 +115,9 @@ input, textarea {
 	appearance: none;
 }
 
+img, embed, object, video, iframe {
+    max-width: 100%;
+}
 
 /* ----- Header ----- */
 
