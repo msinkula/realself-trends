@@ -780,7 +780,7 @@ img, embed, object, video, iframe {
 		/*border: 1px solid magenta;*/	
 	}
 	
-	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba {
+	#content.post-single #meta-box, #content.post-single #comments-section, #content.post-single #post-meta, #content.post-single #post-image-large, #content.post-single h2, #content.post-single h3, #content.post-single h4, #content.post-single p, #content.post-single ul, #content.post-single ol, #content.post-single blockquote, #content.post-single div.ssba, div.fb-video {
 		box-sizing: border-box;
 		max-width: 700px;
 		margin-right: auto;
@@ -797,6 +797,16 @@ img, embed, object, video, iframe {
 		margin-left: 0;*/
 	}
 	
+	
+	/* ----- Facebook Video ----- */
+	
+	div.fb-video {
+		margin: 0 auto 10px auto;
+	}
+	
+	.fb_iframe_widget {
+		display: block !important;
+	}
 	
 /* ----- Post Navigation ----- */
 
