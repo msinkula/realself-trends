@@ -330,10 +330,14 @@ img, embed, object, video, iframe {
 		
 		#content p.post-tags a {
 			margin-right: 10px;
+			margin-bottom: 10px;
 			padding: 4px 8px;
 			border-radius: 2px;
 			color: #666260;
 			background-color: #ebeae7;
+			white-space: nowrap;
+			/*overflow: hidden;*/
+			display: inline-block;	
 		}
 		
 		#content p.post-tags a:before {
@@ -384,7 +388,7 @@ img, embed, object, video, iframe {
 		color: #FFF;
 		font-size: 1.625em;
 		line-height: 125%;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		margin-bottom: 10px;
 		overflow: hidden;
 	}
@@ -441,7 +445,6 @@ img, embed, object, video, iframe {
 		-o-border-radius: 0px !important;
 		border-radius: 0px !important;
 		box-shadow: 0 0 0px 0px rgba(0,0,0,0) !important;
-		display: block !important;
 		width: 200px !important;
 		}
 		
@@ -704,6 +707,25 @@ img, embed, object, video, iframe {
 	div.ssba img {
 		margin-left: 10px;
 	}
+	
+	/* ---- Woo Slider ---- */
+
+	div.wooslider {
+		max-width: 700px;
+		margin: 0 auto 60px auto !important;
+		border: none !important;
+		box-shadow: none !important;
+	}
+
+	ul.slides {
+		padding: 0 !important;
+	}
+
+	div.slide-content {
+		margin: 0 !important;
+	}
+
+	
 	
 	
 	/* ----- Comments Section ----- */
