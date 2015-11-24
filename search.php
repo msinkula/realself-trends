@@ -14,20 +14,12 @@
     <p class="post-link"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>
     </article>
     <?php endwhile; ?>
-    <p>Still not satified? Try a different search?</p>
+    <!-- <p>Still not satified? Try a different search?</p> -->
     <?php else : ?>
     <p>No posts found. Try a different search?</p>
     <?php endif; ?> 
     
 </div>
 <!-- End Content -->
-
-<!-- Begin Search -->
-<div id="search-modal">
-<div id="search-modal-box">
-<?php get_search_form(); ?>
-</div>
-</div>
-<!-- End Search -->
 
 <?php get_footer(); ?>

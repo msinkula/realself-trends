@@ -107,7 +107,6 @@ Author URI: http://www.premiumdw.com/
 </div>
 <!-- End Navigation -->
 
-<?php if(!( is_search() || is_404() )) :  ?>
 <!-- Begin Search -->
 <div id="search-modal">
 <div id="search-modal-box">
@@ -115,4 +114,3 @@ Author URI: http://www.premiumdw.com/
 </div>
 </div>
 <!-- End Search -->
-<?php endif; ?>
