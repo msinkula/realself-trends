@@ -16,6 +16,7 @@ window.onload = function() {
 		$('#search-toggle-open').css('display', 'block');
 		$('#search-toggle-close').css('display', 'none');
 		$('#search-modal').slideToggle();
+        
 	});
 	//
 	
