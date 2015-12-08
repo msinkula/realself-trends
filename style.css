@@ -113,7 +113,7 @@ input, textarea {
 }
 
 img, embed, object, video, iframe {
-	max-width: 100%; /* Testing Local to Remote */
+	max-width: 100%;
 	}
 
 
