@@ -23,12 +23,4 @@ window.onload = function() {
 	$( 'input#s' ).attr( 'placeholder','Search RealSelf Trends Blog' );
 	//
 	
-	// Disable light-box 
-	/*if (window.innerWidth < 801) {
-		
-		$('div.post-single a').click.preventDefault();
-		
-	}*/
-	
-	
 }; // end window load
