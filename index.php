@@ -26,7 +26,7 @@
     <p class="post-link"><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title(); ?>">Read More</a></p>    
     </article>
     <?php endwhile; wp_reset_query(); // end the loop ?>    
-    <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="9" offset="10" pause="true" destroy_after="3" button_label="Load More"]'); ?>
+    <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="9" offset="10" pause="true" destroy_after="5" button_label="Load More"]'); ?>
 </div>
 <!-- End Content -->
     
