@@ -18,22 +18,20 @@
         <!-- End Post Meta -->
         
         <!-- Begin Post Featured Image -->
-        
-        
-        <?php if (get_post_meta($post->ID, 'featured_image', TRUE) == 'extra-large' ) : ?>
+        <?php if (get_post_meta($post->ID, 'featured_image', TRUE) == 'extra-large' ) : // if using the custom field of "featured_image" set to "extra-large" ?>
             <div id="post-image-extra-large">
-                <?php echo get_the_post_thumbnail($page->ID, 'extra-large'); ?>
-                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+                <?php echo get_the_post_thumbnail($page->ID, 'extra-large'); // use "extra-large" image...  ?>
+                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; // ... with caption ?></p>
             </div>
-        <?php elseif (get_post_meta($post->ID, 'featured_image', TRUE) == 'none' ) : ?>
-            <?php echo '<!-- No Featured Image -->' ?>
-        <?php else : ?>
+        <?php elseif (get_post_meta($post->ID, 'featured_image', TRUE) == 'none' ) : // if using the custom field of "featured_image" set to "none" ?>
+            <?php echo '<!-- No Featured Image -->'; // don't use featured image  ?>
+        <?php else : // else ?>
             <div id="post-image-large">
-                <?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
-                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+                <?php echo get_the_post_thumbnail($page->ID, 'large'); // use the "large" image...  ?>
+                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; // ... with caption ?></p>
             </div>
         <?php endif; ?>
-        <!-- End Post Image -->
+        <!-- End Post Featured Image -->
         
         <!-- Begin Post Content -->
         <div id="post-content">
