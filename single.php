@@ -18,15 +18,21 @@
         <!-- End Post Meta -->
         
         <!-- Begin Post Featured Image -->
-        <?php if (get_post_meta($post->ID, 'featured_image', TRUE)) : ?>
-        <div id="post-image-extra-large">
-        <?php echo get_the_post_thumbnail($page->ID, 'extra-large'); ?>
+        
+        
+        <?php if (get_post_meta($post->ID, 'featured_image', TRUE) == 'extra-large' ) : ?>
+            <div id="post-image-extra-large">
+                <?php echo get_the_post_thumbnail($page->ID, 'extra-large'); ?>
+                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+            </div>
+        <?php elseif (get_post_meta($post->ID, 'featured_image', TRUE) == 'none' ) : ?>
+            <?php echo '<!-- No Featured Image -->' ?>
         <?php else : ?>
-        <div id="post-image-large">
-        <?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+            <div id="post-image-large">
+                <?php echo get_the_post_thumbnail($page->ID, 'large'); ?>
+                <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
+            </div>
         <?php endif; ?>
-            <p class="wp-caption-text"><?php echo get_post(get_post_thumbnail_id())->post_excerpt; ?></p>
-        </div>
         <!-- End Post Image -->
         
         <!-- Begin Post Content -->
