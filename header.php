@@ -77,7 +77,7 @@ Author URI: http://www.premiumdw.com/
 
     <!-- Begin Brand -->
     <div id="brand">
-    <a href="http://www.realself.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/logo-original-16px.png" alt="Link to Real Self Dot Com"></a>
+    <a href="https://www.realself.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/logo-original-16px.png" alt="Link to Real Self Dot Com"></a>
     </div>
     <!-- End Brand -->
     

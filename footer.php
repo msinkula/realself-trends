@@ -3,7 +3,7 @@
 
     <!-- Begin Footer Logo -->
     <div id="footer-logo">
-    	<a href="http://www.realself.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/logo-realselffooter.png" alt="RealSelf"></a>
+    	<a href="https://www.realself.com/" target="_blank"><img src="<?php bloginfo('template_directory'); ?>/images/logo-realselffooter.png" alt="RealSelf"></a>
     </div>
     <!-- End Footer Logo -->
 
